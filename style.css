@@ -159,3 +159,41 @@ button{
 }
 
 }
+.story{
+    margin:60px auto;
+    max-width:900px;
+}
+
+.story h2{
+    margin-bottom:30px;
+    font-size:38px;
+}
+
+.story-card{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:25px;
+    margin:20px;
+    box-shadow:0 10px 25px rgba(255,105,180,.2);
+    transition:.4s;
+}
+
+.story-card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+.story-card span{
+    font-size:45px;
+}
+
+.story-card h3{
+    margin:15px 0;
+    color:#ff2f88;
+}
+
+.story-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:18px;
+}
