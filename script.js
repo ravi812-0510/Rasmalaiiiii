@@ -1,1 +1,67 @@
+const startBtn = document.getElementById("startBtn");
+const welcome = document.getElementById("welcome");
+const main = document.getElementById("main");
+const typing = document.getElementById("typing");
+const giftBtn = document.getElementById("giftBtn");
+const giftMessage = document.getElementById("giftMessage");
 
+const letter = `Dear Rasmalaiiiii ❤️
+
+You are my happiest place, my biggest smile, and my sweetest memory.
+
+Every moment with you feels magical.
+
+Thank you for filling my life with love, happiness, and endless smiles.
+
+I promise to stand by your side, support you, and love you with all my heart.
+
+Happy Girlfriend's Day, My Love. ❤️
+
+Forever Yours,
+Sweetuu 💕`;
+
+startBtn.addEventListener("click", () => {
+    welcome.style.display = "none";
+    main.classList.remove("hidden");
+    typeLetter();
+});
+
+function typeLetter() {
+    let i = 0;
+    typing.innerHTML = "";
+
+    const interval = setInterval(() => {
+        if (i < letter.length) {
+            typing.innerHTML += letter.charAt(i);
+            i++;
+        } else {
+            clearInterval(interval);
+        }
+    }, 40);
+}
+
+giftBtn.addEventListener("click", () => {
+    giftMessage.classList.remove("hidden");
+
+    for (let i = 0; i < 40; i++) {
+        createHeart();
+    }
+});
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (20 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+setInterval(createHeart, 600);
