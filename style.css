@@ -210,8 +210,10 @@ button{
     background:white;
     border-radius:20px;
     overflow:hidden;
+    padding:15px;
     box-shadow:0 10px 25px rgba(255,105,180,.2);
     transition:.3s;
+    text-align:center;
 }
 
 .photo-card:hover{
@@ -220,11 +222,13 @@ button{
 
 .photo-card img{
     width:100%;
-    height:300px;
+    max-width:250px;
+    height:250px;
     object-fit:cover;
     display:block;
+    margin:0 auto;
+    border-radius:15px;
 }
-
 .photo-card p{
     padding:15px;
     color:#555;
