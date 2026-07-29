@@ -44,7 +44,7 @@ body{
 }
 
 button{
-    background:#E3A008;
+    background:linear-gradient(135deg,#F4C542,#E3A008);
     color:white;
     border:none;
     padding:18px 42px;
@@ -52,14 +52,13 @@ button{
     font-size:20px;
     font-weight:600;
     cursor:pointer;
-    transition:.35s;
-    box-shadow:0 12px 30px rgba(227,160,8,.35);
+    transition:all .3s ease;
+    box-shadow:0 10px 25px rgba(227,160,8,.35);
 }
 
 button:hover{
-    transform:translateY(-3px) scale(1.05);
-    background:#C98B00;
-    box-shadow:0 16px 35px rgba(201,139,0,.45);
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(227,160,8,.5);
 }
 .main{
     padding:40px 20px;
