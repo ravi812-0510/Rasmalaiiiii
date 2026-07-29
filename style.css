@@ -79,21 +79,22 @@ button:hover{
 
 .glass{
     width:90%;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
-   background:rgba(255,248,231,.85);
-    backdrop-filter:blur(15px);
-    border-radius:25px;
-    padding:35px;
-    box-shadow:0 10px 30px rgba(255,105,180,.25);
+    background:#FFFDF7;
+    border:2px solid #F2D675;
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(180,140,30,.18);
+    position:relative;
 }
 
 #typing{
     font-size:22px;
-    line-height:1.9;
-    color:#444;
+    line-height:2;
+    color:#5B4636;
+    text-align:left;
 }
-
 #giftBtn{
     margin-top:35px;
 }
