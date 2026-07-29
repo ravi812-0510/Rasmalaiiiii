@@ -55,6 +55,7 @@ button{
     cursor:pointer;
     transition:all .3s ease;
     box-shadow:0 10px 25px rgba(227,160,8,.35);
+animation: buttonPulse 2.5s infinite;
 }
 
 button:hover{
@@ -307,5 +308,13 @@ button{
     to{
         opacity:1;
         transform:translateY(0);
+    }
+}
+@keyframes buttonPulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.04);
     }
 }
