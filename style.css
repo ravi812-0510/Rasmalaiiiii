@@ -256,9 +256,11 @@ button{
 
 .hero-text{
     margin:25px 0 40px;
-    font-size:22px;
+    font-size:21px;
     color:#6B4E16;
-    line-height:1.8;
+    line-height:1.9;
+    max-width:650px;
+    text-align:center;
 }
 
 @keyframes glow{
