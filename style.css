@@ -44,20 +44,22 @@ body{
 }
 
 button{
-    background:#F4B400;
+    background:#E3A008;
     color:white;
     border:none;
-    padding:18px 40px;
+    padding:18px 42px;
     border-radius:50px;
     font-size:20px;
+    font-weight:600;
     cursor:pointer;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(255,93,162,.4);
+    transition:.35s;
+    box-shadow:0 12px 30px rgba(227,160,8,.35);
 }
 
 button:hover{
-    transform:scale(1.08);
-    background:#D99A00;
+    transform:translateY(-3px) scale(1.05);
+    background:#C98B00;
+    box-shadow:0 16px 35px rgba(201,139,0,.45);
 }
 .main{
     padding:40px 20px;
