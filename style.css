@@ -6,10 +6,10 @@
 }
 
 body{
-    background:linear-gradient(135deg,#ffd6e8,#fff5fb,#ffe4f2);
+    background:linear-gradient(180deg,#FFF8E7 0%,#FFE08A 45%,#F5C542 100%);
     min-height:100vh;
     overflow-x:hidden;
-    color:#ff4f9a;
+    color:#6B4E16;
 }
 
 .hidden{
@@ -40,7 +40,7 @@ body{
 }
 
 button{
-    background:#ff5da2;
+    background:#F4B400;
     color:white;
     border:none;
     padding:18px 40px;
@@ -53,9 +53,8 @@ button{
 
 button:hover{
     transform:scale(1.08);
-    background:#ff2f88;
+    background:#D99A00;
 }
-
 .main{
     padding:40px 20px;
     text-align:center;
@@ -75,7 +74,7 @@ button:hover{
     width:90%;
     max-width:700px;
     margin:auto;
-    background:rgba(255,255,255,.45);
+   background:rgba(255,248,231,.85);
     backdrop-filter:blur(15px);
     border-radius:25px;
     padding:35px;
