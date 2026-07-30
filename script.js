@@ -65,3 +65,37 @@ function createHeart() {
 }
 
 setInterval(createHeart, 600);
+const message = `My Dearest Rasmalaiiiii,
+
+From the day you came into my life, everything became brighter.
+Every smile of yours makes my heart happy, and every memory with you is a treasure I will always keep.
+
+Thank you for loving me, supporting me, and standing by my side.
+You are my happiness, my peace, and my favorite person.
+
+This little website is made only for you because you deserve something as special as you are.
+
+I Love You Forever ❤️`;
+
+const typewriter = document.getElementById("typewriter");
+const signature = document.getElementById("signature");
+
+if (typewriter) {
+    let i = 0;
+
+    function type() {
+        if (i < message.length) {
+            if (message.charAt(i) === "\n") {
+                typewriter.innerHTML += "<br>";
+            } else {
+                typewriter.innerHTML += message.charAt(i);
+            }
+            i++;
+            setTimeout(type, 40);
+        } else {
+            signature.style.display = "block";
+        }
+    }
+
+    type();
+}
