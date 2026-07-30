@@ -24,7 +24,6 @@ startBtn.addEventListener("click", () => {
     welcome.style.display = "none";
     main.classList.remove("hidden");
     typeLetter();
-    startLoveLetter();
 });
 
 function typeLetter() {
@@ -103,4 +102,17 @@ function startLoveLetter() {
 
     type();
 }
+}
+const envelope = document.getElementById("envelope");
+const loveLetter = document.querySelector(".love-letter");
+
+if (envelope) {
+    envelope.addEventListener("click", () => {
+        envelope.style.display = "none";
+        document.querySelector(".envelope-text").style.display = "none";
+
+        loveLetter.style.display = "flex";
+
+        startLoveLetter();
+    });
 }
