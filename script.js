@@ -24,6 +24,7 @@ startBtn.addEventListener("click", () => {
     welcome.style.display = "none";
     main.classList.remove("hidden");
     typeLetter();
+    startLoveLetter();
 });
 
 function typeLetter() {
@@ -80,8 +81,11 @@ I Love You Forever ❤️`;
 const typewriter = document.getElementById("typewriter");
 const signature = document.getElementById("signature");
 
-if (typewriter) {
+function startLoveLetter() {
+    if (!typewriter) return;
+
     let i = 0;
+    typewriter.innerHTML = "";
 
     function type() {
         if (i < message.length) {
@@ -98,4 +102,5 @@ if (typewriter) {
     }
 
     type();
+}
 }
