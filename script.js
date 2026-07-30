@@ -116,3 +116,8 @@ if (envelope) {
         startLoveLetter();
     });
 }
+function openHeart(){
+
+    document.getElementById("heartMessage").style.display = "block";
+
+}
