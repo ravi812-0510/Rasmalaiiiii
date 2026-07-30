@@ -364,3 +364,33 @@ button{
         opacity:0;
     }
 }
+.envelope-section{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.envelope{
+    font-size:90px;
+    cursor:pointer;
+    transition:.4s;
+    animation:float 2s ease-in-out infinite;
+}
+
+.envelope:hover{
+    transform:scale(1.15);
+}
+
+.envelope-text{
+    margin-top:15px;
+    color:#b8860b;
+    font-size:18px;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+.love-letter{
+    display:none;
+}
