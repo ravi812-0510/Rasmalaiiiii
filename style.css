@@ -319,3 +319,38 @@ button{
         transform:scale(1.04);
     }
 }
+.love-letter{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.letter-card{
+    max-width:800px;
+    background:rgba(255,255,255,0.9);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    backdrop-filter:blur(10px);
+    border:3px solid #f5d76e;
+}
+
+.letter-card h2{
+    text-align:center;
+    color:#d4a017;
+    margin-bottom:25px;
+}
+
+.letter-card p{
+    font-size:1.1rem;
+    line-height:1.9;
+    color:#444;
+    margin-bottom:18px;
+}
+
+.signature{
+    text-align:right;
+    font-weight:bold;
+    color:#d4a017;
+    font-size:1.2rem;
+}
