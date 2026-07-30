@@ -151,13 +151,6 @@ button:hover{
     line-height:1.8;
 }
 
-.heart{
-    position:fixed;
-    bottom:-30px;
-    font-size:24px;
-    animation:float 8s linear forwards;
-    pointer-events:none;
-}
 
 @keyframes float{
     to{
@@ -453,3 +446,4 @@ button{
     }
 
 }
+  
