@@ -102,6 +102,7 @@ function startLoveLetter() {
 
     type();
 }
+
 const envelope = document.getElementById("envelope");
 const loveLetter = document.querySelector(".love-letter");
 
