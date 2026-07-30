@@ -354,3 +354,13 @@ button{
     color:#d4a017;
     font-size:1.2rem;
 }
+#typewriter::after{
+    content:"|";
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
