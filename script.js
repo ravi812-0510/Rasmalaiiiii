@@ -41,13 +41,18 @@ function typeLetter() {
 }
 
 giftBtn.addEventListener("click", () => {
+
     giftMessage.classList.remove("hidden");
+
+    setTimeout(() => {
+        giftMessage.classList.add("show");
+    }, 50);
 
     for (let i = 0; i < 40; i++) {
         createHeart();
     }
-});
 
+});
 function createHeart() {
     const heart = document.createElement("div");
     heart.className = "heart";
