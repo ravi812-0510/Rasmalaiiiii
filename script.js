@@ -102,7 +102,6 @@ function startLoveLetter() {
 
     type();
 }
-}
 const envelope = document.getElementById("envelope");
 const loveLetter = document.querySelector(".love-letter");
 
@@ -120,19 +119,4 @@ function openHeart(){
 
     document.getElementById("heartMessage").style.display = "block";
 
-}
-const startBtn = document.getElementById("startBtn");
-
-if(startBtn){
-    startBtn.addEventListener("click", function(){
-
-        document.body.classList.add("opened");
-
-        const heart = document.querySelector(".heart-container");
-
-        if(heart){
-            heart.style.display = "block";
-        }
-
-    });
 }
