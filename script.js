@@ -139,3 +139,11 @@ const daysElement = document.getElementById("days");
 if (daysElement) {
     daysElement.textContent = diffDays;
 }
+const bookBtn = document.getElementById("bookBtn");
+const scrapbook = document.getElementById("scrapbook");
+
+if (bookBtn && scrapbook) {
+    bookBtn.addEventListener("click", () => {
+        scrapbook.classList.toggle("hidden");
+    });
+}
