@@ -465,29 +465,21 @@ button{
 }
 
 .counter-box div{
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(15px);
+    border:1px solid #F5D76E;
     padding:25px;
-    border-radius:20px;
+    border-radius:22px;
     min-width:170px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
     transition:.4s;
 }
 
-.counter-box div:hover{
-    transform:translateY(-8px) scale(1.05);
-}
-
-.counter-box h3{
-    font-size:38px;
-    color:#FFD54F;
-}
-
 .counter-box p{
-    color:white;
+    color:#5D4037;
     margin-top:10px;
+    font-weight:600;
 }
-
 /* ========================= */
 /* THANK YOU SECTION */
 /* ========================= */
