@@ -451,4 +451,73 @@ button{
 }
 
 }
-  
+  /* ========================= */
+/* COUNTDOWN SECTION */
+/* ========================= */
+
+.countdown-section{
+    margin:80px auto;
+    text-align:center;
+}
+
+.counter-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.counter-box div{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:20px;
+    min-width:170px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.counter-box div:hover{
+    transform:translateY(-8px) scale(1.05);
+}
+
+.counter-box h3{
+    font-size:38px;
+    color:#FFD54F;
+}
+
+.counter-box p{
+    color:white;
+    margin-top:10px;
+}
+
+/* ========================= */
+/* THANK YOU SECTION */
+/* ========================= */
+
+.thankyou{
+    margin:90px auto;
+    max-width:850px;
+    text-align:center;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.thankyou h2{
+    color:#FFD54F;
+    margin-bottom:20px;
+}
+
+.thankyou p{
+    line-height:2;
+    font-size:18px;
+}
+
+.thankyou h3{
+    margin-top:30px;
+    color:#FFD54F;
+}
