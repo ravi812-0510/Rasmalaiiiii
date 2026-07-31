@@ -509,3 +509,47 @@ button{
     margin-top:30px;
     color:#FFD54F;
 }
+/* ========================= */
+/* MEMORY BOOK */
+/* ========================= */
+
+.scrapbook-section{
+    max-width:1000px;
+    margin:80px auto;
+    text-align:center;
+    padding:20px;
+}
+
+.scrapbook-section h2{
+    color:#8B5E3C;
+    margin-bottom:20px;
+}
+
+.scrapbook{
+    display:none;
+    margin-top:30px;
+}
+
+.scrapbook:not(.hidden){
+    display:block;
+}
+
+.scrap-page{
+    background:#FFF9EC;
+    border:2px solid #F5D76E;
+    border-radius:20px;
+    padding:25px;
+    margin:20px auto;
+    max-width:700px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transform:rotate(-1deg);
+    transition:.4s;
+}
+
+.scrap-page:nth-child(even){
+    transform:rotate(1deg);
+}
+
+.scrap-page:hover{
+    transform:scale(1.03) rotate(0deg);
+}
