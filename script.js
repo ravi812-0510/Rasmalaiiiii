@@ -126,3 +126,16 @@ function openHeart(){
     document.getElementById("heartMessage").style.display = "block";
 
 }
+// Days Together Counter
+const startDate = new Date("2025-08-16"); // Change this to your anniversary date if needed
+
+const today = new Date();
+
+const diffTime = today - startDate;
+const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+
+const daysElement = document.getElementById("days");
+
+if (daysElement) {
+    daysElement.textContent = diffDays;
+}
