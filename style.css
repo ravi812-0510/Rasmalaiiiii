@@ -510,46 +510,62 @@ button{
     color:#FFD54F;
 }
 /* ========================= */
-/* MEMORY BOOK */
+/* PREMIUM MEMORY BOOK */
 /* ========================= */
 
 .scrapbook-section{
-    max-width:1000px;
+    max-width:900px;
     margin:80px auto;
     text-align:center;
-    padding:20px;
 }
 
-.scrapbook-section h2{
-    color:#8B5E3C;
-    margin-bottom:20px;
+.book{
+    position:relative;
+    max-width:700px;
+    margin:40px auto;
+    min-height:550px;
 }
 
-.scrapbook{
+.page{
     display:none;
-    margin-top:30px;
+    background:#FFF9EC;
+    border:3px solid #E0C56E;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    animation:pageFlip .7s ease;
 }
 
-.scrapbook:not(.hidden){
+.page.active{
     display:block;
 }
 
-.scrap-page{
-    background:#FFF9EC;
-    border:2px solid #F5D76E;
-    border-radius:20px;
-    padding:25px;
-    margin:20px auto;
-    max-width:700px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-    transform:rotate(-1deg);
-    transition:.4s;
+.book-photo{
+    width:100%;
+    max-height:320px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:20px 0;
 }
 
-.scrap-page:nth-child(even){
-    transform:rotate(1deg);
+.book-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
 }
 
-.scrap-page:hover{
-    transform:scale(1.03) rotate(0deg);
+.book-buttons button{
+    padding:14px 28px;
+}
+
+@keyframes pageFlip{
+    from{
+        opacity:0;
+        transform:rotateY(-90deg);
+    }
+    to{
+        opacity:1;
+        transform:rotateY(0deg);
+    }
 }
