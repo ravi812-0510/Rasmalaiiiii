@@ -139,6 +139,10 @@ const daysElement = document.getElementById("days");
 if (daysElement) {
     daysElement.textContent = diffDays;
 }
+/* ========================= */
+/* PREMIUM MEMORY BOOK */
+/* ========================= */
+
 const pages = document.querySelectorAll(".page");
 const nextBtn = document.getElementById("nextPage");
 const prevBtn = document.getElementById("prevPage");
@@ -146,31 +150,48 @@ const prevBtn = document.getElementById("prevPage");
 let currentPage = 0;
 
 function showPage(index) {
-    pages.forEach(page => page.classList.remove("active"));
+
+    pages.forEach(page => {
+        page.classList.remove("active");
+    });
 
     if (pages[index]) {
         pages[index].classList.add("active");
     }
+
+    if (prevBtn) {
+        prevBtn.disabled = (index === 0);
+    }
+
+    if (nextBtn) {
+        nextBtn.disabled = (index === pages.length - 1);
+    }
 }
 
 if (pages.length > 0) {
+
     showPage(currentPage);
-}
 
-if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-        if (currentPage < pages.length - 1) {
-            currentPage++;
-            showPage(currentPage);
-        }
-    });
-}
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
 
-if (prevBtn) {
-    prevBtn.addEventListener("click", () => {
-        if (currentPage > 0) {
-            currentPage--;
-            showPage(currentPage);
-        }
-    });
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+
+        });
+    }
+
 }
