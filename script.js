@@ -139,44 +139,38 @@ const daysElement = document.getElementById("days");
 if (daysElement) {
     daysElement.textContent = diffDays;
 }
-/* ===== Memory Book ===== */
-
 const pages = document.querySelectorAll(".page");
+const nextBtn = document.getElementById("nextPage");
+const prevBtn = document.getElementById("prevPage");
 
 let currentPage = 0;
 
-function showPage(index){
+function showPage(index) {
+    pages.forEach(page => page.classList.remove("active"));
 
-    pages.forEach(page=>{
-        page.classList.remove("active");
-    });
-
-    pages[index].classList.add("active");
-
+    if (pages[index]) {
+        pages[index].classList.add("active");
+    }
 }
 
-showPage(currentPage);
+if (pages.length > 0) {
+    showPage(currentPage);
+}
 
-document.getElementById("nextPage").addEventListener("click",()=>{
+if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+        if (currentPage < pages.length - 1) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+}
 
-    if(currentPage < pages.length-1){
-
-        currentPage++;
-
-        showPage(currentPage);
-
-    }
-
-});
-
-document.getElementById("prevPage").addEventListener("click",()=>{
-
-    if(currentPage>0){
-
-        currentPage--;
-
-        showPage(currentPage);
-
-    }
-
-});
+if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+}
