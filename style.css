@@ -654,3 +654,29 @@ button{
     }
 
 }
+.timeline{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.timeline h2{
+    color:#D4A017;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.date-box{
+    max-width:600px;
+    margin:auto;
+}
+
+.date-box p{
+    background:#FFFDF7;
+    border:2px solid #F2D675;
+    border-radius:20px;
+    padding:20px;
+    margin:15px 0;
+    font-size:18px;
+    line-height:1.6;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
