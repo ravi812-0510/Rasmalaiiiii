@@ -183,7 +183,7 @@ if (pages.length > 0) {
         });
     }
 
-    if (prevBtn) {
+ if (prevBtn) {
         prevBtn.addEventListener("click", () => {
 
             if (currentPage > 0) {
@@ -193,4 +193,5 @@ if (pages.length > 0) {
 
         });
     }
+
 }
