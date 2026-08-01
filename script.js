@@ -194,4 +194,20 @@ if (pages.length > 0) {
         });
     }
 
-}
+const petals = document.getElementById("petals");
+
+setInterval(()=>{
+
+    let petal = document.createElement("div");
+    petal.className="petal";
+
+    petal.style.left = Math.random()*100 + "%";
+    petal.style.animationDuration = (4 + Math.random()*5) + "s";
+
+    petals.appendChild(petal);
+
+    setTimeout(()=>{
+        petal.remove();
+    },9000);
+
+},500);
