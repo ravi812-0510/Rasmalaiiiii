@@ -172,7 +172,7 @@ if (pages.length > 0) {
 
     showPage(currentPage);
 
-   if (nextBtn) {
+    if (nextBtn) {
         nextBtn.addEventListener("click", () => {
 
             if (currentPage < pages.length - 1) {
@@ -183,7 +183,7 @@ if (pages.length > 0) {
         });
     }
 
- if (prevBtn) {
+    if (prevBtn) {
         prevBtn.addEventListener("click", () => {
 
             if (currentPage > 0) {
@@ -195,4 +195,5 @@ if (pages.length > 0) {
     }
 
 }
+
 console.log("script working");
