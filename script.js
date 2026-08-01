@@ -194,6 +194,6 @@ if (pages.length > 0) {
         });
     }
 
-}
+    
 
 console.log("script working");
