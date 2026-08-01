@@ -193,7 +193,7 @@ if (pages.length > 0) {
 
         });
     }
-
+}
 const petals = document.getElementById("petals");
 
 setInterval(()=>{
