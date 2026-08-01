@@ -183,8 +183,6 @@ if (pages.length > 0) {
         });
     }
 
-}
-
  if (prevBtn) {
         prevBtn.addEventListener("click", () => {
 
